@@ -1,0 +1,7 @@
+
+header{
+    background-color: black;
+    color:white;
+}
+
+@media screen and (min-width: 500px)
