@@ -1,11 +1,15 @@
-/* {box-sizing: border-box};*/
+* {box-sizing: border-box};
 
-/*{
+*{
     margin:0;
     padding:0;
     box-sizing:border-box;
-}*/
+}
 
+header img{
+    background-color: green;
+
+}
 
 
 nav {
@@ -38,7 +42,7 @@ nav .active {
 background-color:rgb(59, 59, 47);
 }
 
-
+/*header, footer, nav{background-color: rgb(41, 41, 45);}*/
 
 Body {
     font-family:"Roboto", "sans-serif" ;
@@ -50,20 +54,21 @@ h1{
 }
 
 .larger{
-    display: grid;
-    /*grid-template-columns: 2fr 1fr;*/
+    /*display: grid;
+    grid-template-columns: repeat 3fr;
+    grid-template-rows: auto;*/
     margin: 1rem 2vw;
 }
 
-.larger section{
-    /*border:1px solid #0a0c0a;*/
-    /*background-color: #23304f;*/
-    /*border-radius: 10px;*/
+.larger section{ 
+    /*border:1px solid #0a0c0a;
+    background-color: #23304f;
+    border-radius: 10px;*/
     overflow:hidden;
-    margin: 1rem 0;
+    margin: 1rem 0
 }
 
-.larger span{
+.larger h2{
     background-color: #415541;
     color:#fff;
     text-align:center;
@@ -74,11 +79,11 @@ h1{
 
 .larger li{
     padding: 10px
-
 }
 
 
 .larger ul{
     background-color: aquamarine;
+    border: 1px solid black;
     border-radius: 10px;
 }
