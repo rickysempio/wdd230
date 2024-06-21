@@ -8,6 +8,8 @@
 
 header img{
     background-color: green;
+    display: block;
+
 
 }
 
@@ -33,6 +35,31 @@ nav a {
     background-color: black;
     justify-content: center;
 }
+
+
+/*insert */
+nav {
+	font-size: 1.5rem;
+	border: 0;
+	background: none;
+	color: #000;
+ 	position: absolute;
+	top: 1rem;
+	right: 1rem;
+}
+
+
+nav::before {
+	content: "☰";
+}
+
+nav.open::before {
+	content: "☒";
+}
+
+/* end*/
+
+
 
 nav a:hover {
     background-color: rgb(92, 92, 64);
