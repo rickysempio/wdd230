@@ -9,10 +9,22 @@
 header img{
     background-color: green;
     display: block;
+    margin: 5px;
+    padding: 2px
+    
+    
 
 
 }
+header {
+    background-color: aquamarine;
+    width: 800px;
+    height: auto;
+    border-radius: 10px;
+    border: solid 1px  #000;
+    margin: 10px
 
+}
 
 nav {
     display:grid;
@@ -78,6 +90,11 @@ Body {
 
 h1{
     font-weight: 100;
+
+}
+
+main h1{
+    margin: 10px;
 }
 
 .larger{
