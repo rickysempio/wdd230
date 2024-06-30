@@ -335,6 +335,88 @@ footer {
     padding-right: 100px;
 }
 
+/*lazy loading*/
 
+div main{
+    display: grid;
+    grid-template-columns: minmax(150px, 25%) 1fr;
+    grid-template-rows: auto;
+}
+
+.info-demo {
+    grid-row: 1 / 2;
+    grid-column: 1 / auto ;
+
+}
+
+.info-stats {
+    grid-row: 2/ 3;
+    grid-column: 1 / auto ;
+
+}
+.info-events {
+    grid-row: 3 / 4;
+    grid-column: 1 / auto ;
+
+}
+
+.info-attract {
+    grid-row: 4 / 5;
+    grid-column: 1 / auto ;
+
+}
+
+.info-cal {
+    grid-row: 5 / 6;
+    grid-column: 1 / auto ;
+
+}
+
+
+
+ div main img{
+    grid-row: 2 / auto;
+    grid-column: 2 / auto;
+}
+
+.img-enchanted:hover {
+    opacity: 6;
+    transform: scale(1.1);
+}   
+
+.img-enchanted {
+    border: 2px solid #70704f;
+    box-shadow: 5px 5px 10px rgb(32, 18, 18);
+    box-sizing: border-box;
+    margin:5px 20px 10px 2px;
+
+}
+
+h1{
+    text-align: center;
+}
+
+main {
+    margin: 0 auto;
+    width: 400px;
+    display:flex;
+    flex-direction: column;
+}
+
+img {
+    width: 100%;
+    background: #000;
+    animation: fade 15s;
+}
+
+@keyframes fade {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+
+}
 
 
