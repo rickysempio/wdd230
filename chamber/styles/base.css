@@ -454,6 +454,7 @@ body {
 
 }
 
+
 .joinform input[type="text"],
 .joinform input[type="text"],
 .joinform input[type="email"],
@@ -485,8 +486,17 @@ body {
     box-shadow: 1px 1px 4px #999;
     font-size: 1rem;
 
-
 }
+
+.joinform textarea[id="description"]{
+    background-color: #eee;
+    width: 100%;
+    max-width: 400px;
+    border-radius: 6px;
+}
+
+
+
 
 .joinform input:required {
     border-right: solid 8px red
