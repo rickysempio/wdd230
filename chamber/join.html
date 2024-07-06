@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Join Web Page</title>
+    <meta name="description" content="WDD230 Join Web Page">
+    <meta name="author" content="Ricky Sempio">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400&display=swap" rel="stylesheet">
+    <link rel="icon" href="favicon.ico">
+    <meta property="og:title" content="The Santa Rosa Community Chambers of commerce">
+    <meta property="og:type" content="Website">
+    <meta property="og:image" content="https://upload.wikimedia.org/wikipedia/commons/2/26/Santa_Rosa_Arch_%28Rizal_Boulevard%2C_Santa_Rosa%2C_Laguna%3B_12-23-2021%29.jpg">
+    <meta property="og:url" content="https://github.com/rickysempio/cse210-projects">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/larger.css">
+</head>
+<body>
+    <header> 
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="discover.html">Discover</a>
+            <a href="directory.html">Directory</a>
+            <a href="join.html">Join</a>
+        </nav>  
+    </header>
+    <main>
+        <form method="get" action="thankyou.html" class="joinform">              
+            <fieldset>                   
+                <legend>Applicant information</legend>
+                    <label>First Name*<input type="text" id="fname" name="fname" placeholder="enter first name" required></label>
+                    <label>Last Name*<input type="text" id="lname" name="lname" placeholder="enter last name" required></label>
+                    <label>Title or Position <input type="text" id="title" name="title"  pattern="[A-Za-z]{7}" title="Minimum seven characters only" placeholder="Manager"> </label>
+                    <label>Email*<input type="email" id="email" name="email" placeholder="someone@gmail.com" required></label>
+                    <label>Phone*<input type="tel" id="tel" name="phone" placeholder="1235551234" required></label>
+                    <label>Business/Organization's Name*<input type="text" id="businessName" name="businessName" placeholder="enter business name or organization's name" required></label>
+            </fieldset>
+            <fieldset>
+                <legend>Membership Level</legend>
+                <label><input type="radio" name="membership" value="NP Membership is for non profit organizations and there    is  no fee">NP Membership</label>
+                <label><input type="radio" name="membership" value="Bronze Membership">Bronze</label>
+                <label><input type="radio" name="membership" value="Silver Membership">Silver</label>
+                <label><input type="radio" name="membership" value="Gold Membership">Gold</label>
+            </fieldset>  
+            <fieldset>
+                <legend>Business Organization Description</legend>
+                <label>Description<input type="text" id="businessDescription" name="businessDescription"></label>
+            </fieldset>
+            <input type="submit" value="I want to Join" id="submitButton">
+
+        </form>
+
+    </main>
+    <footer>
+        <p>Santa Rosa Community and Chambers Commerce &copy; 2024 Ricky Sempio|WDD230</p>
+        <p><a href="directory.html">Directory</a></p>
+        <div class="social">
+            <a href="https://facebook.com" target="_blank">
+                <img src="images/facebook.png" alt="fb icon">
+            </a>
+            <a href="https://twitter.com" target="_blank">
+                <img src="images/twitter.png" alt="twitter icon">
+            </a>
+            <a href="https://instagram.com" target="_blank">
+                    <img src="images/instagram.png" alt="instagram icon">
+            </a>          
+        </div>
+        <p id="lastModified">Last Modification:</p>
+
+    </footer>  
+<script src="scripts/chamber.js"></script> 
+</body>
+</html>
