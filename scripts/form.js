@@ -2,7 +2,7 @@ const pwd1 = document.querySelector("#password1");
 const pwd2 = document.querySelector("#password2");
 const message = document.querySelector("#formmessage");
 
-pwd2.addEventListener("focusout", checkSame);
+password2.addEventListener("focusout", checkSame);
 
 // This should be refactored.
 function checkSame() {

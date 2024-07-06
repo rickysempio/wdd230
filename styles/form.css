@@ -35,6 +35,7 @@
 
 }
 
+.webform input[type="password"],
 .webform input[type="text"],
 .webform input[type="email"]
 {
