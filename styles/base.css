@@ -1,4 +1,4 @@
-* {box-sizing: border-box};
+* {box-sizing: border-box}
 
 *{
     margin:0;
@@ -11,11 +11,9 @@ header img{
     display: block;
     margin: 5px;
     padding: 2px
-    
-    
-
-
 }
+
+
 header {
     background-color: aquamarine;
     width: 800px;
@@ -28,7 +26,7 @@ header {
 
 nav {
     display:grid;
-    grid-template-columns: repeat 3fr;
+    grid-template-columns: 1fr 1fr 1fr;
     /*background-color: #4c3a3a;*/
     margin:auto;
     max-width: 800px;
@@ -36,8 +34,9 @@ nav {
 
 nav ul{
     list-style-type: none;
-
 }
+
+
 nav a {
     display:flex;
     color:#fff;
@@ -90,8 +89,8 @@ Body {
 
 h1{
     font-weight: 100;
-
 }
+
 
 main h1{
     margin: 10px;
@@ -132,7 +131,7 @@ main h1{
     border-radius: 10px;
 }
 
-.hero picture{
+.hero-pictures img{
     width: 100%;
     
 }
@@ -155,7 +154,11 @@ div {
 	margin: 10px auto;
 	position: relative;
 	border: 1px solid rgba(0,0,0,.1);
-	height: 300px;
+	height: 100%;
+    z-index: -1;
+    margin-left: 3px;
+    margin-right: 3px;
+
 }
 
 .hero-pictures img {
@@ -185,3 +188,14 @@ div {
 }
 
 
+/*Number of Visits css*/
+
+#visits {
+	color: navy;
+	font-weight: bolder;
+	font-size: larger;
+}
+
+iframe{
+    margin-left: 10px;
+}
