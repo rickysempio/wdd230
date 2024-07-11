@@ -15,6 +15,7 @@ header img{
 
 
 header {
+    display: block;
     background-color: aquamarine;
     width: 800px;
     height: auto;
@@ -24,15 +25,15 @@ header {
 
 }
 
-nav {
+/*nav {
     display:grid;
     grid-template-columns: 1fr 1fr 1fr;
-    /*background-color: #4c3a3a;*/
+    background-color: #4c3a3a;
     margin:auto;
     max-width: 800px;
-}
+}*/
 
-nav ul{
+/*nav ul{
     list-style-type: none;
 }
 
@@ -45,11 +46,94 @@ nav a {
     text-decoration: none;
     background-color: black;
     justify-content: center;
-}
+}*/
 
 
 /*insert */
+
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+body {
+	font-family: Roboto, sans-serif;
+}
+/* Mobile View ***************/
+#menu {
+	display: block;
+	font-size: 2rem;
+	font-weight:700;
+	text-decoration: none;
+	padding: .5rem .75rem;
+	background-color: #eee;
+	color: #000;
+    /*position: absolute;
+    top:1rem;
+    right:1rem;*/
+}
+
+#menu::before {
+	content: "≡";
+}
+
 nav {
+	background-color: rgb(147, 177, 174);
+}
+.navigation {
+	list-style: none;
+	margin: 0 auto;
+	max-width: 760px;
+}
+
+.navigation li {
+	display: none;
+}
+.navigation a {
+	display: block;
+	padding: 0.75rem;
+	text-align: left;
+	text-decoration: none;
+	color: black;
+	font-weight: 700;
+	transition: 0.5s;
+	font-size: clamp(1rem, 2vmin, 1.5rem);
+}
+
+.navigation a:hover, navigation a:active {
+	color: white;
+	background-color: black;
+}
+
+.show li {
+	display: block;
+}
+
+#menu.show::before {
+	content: "X";
+}
+
+/* Media Query for wider than mobile viewports. Breakpoint should be based upon the design and content and use em units to be relative to the user's font size versus fixed with pixels.*/
+/*@media only screen and (min-width: 40em) {
+	.navigation {
+		display: flex;
+	}
+	.navigation li {
+		display: block; /* change state in small view */
+		/*flex: 1 1 100%;*/
+	/*}
+	.navigation a {
+		text-align: center;
+	}
+	#menu {
+		display: none;
+	}
+}*/
+
+/*insert*/
+
+/*nav {
 	font-size: 1.5rem;
 	border: 0;
 	background: none;
@@ -66,7 +150,7 @@ nav::before {
 
 nav.open::before {
 	content: "☒";
-}
+}*/
 
 /* end*/
 
@@ -199,4 +283,23 @@ div {
 
 iframe{
     margin-left: 10px;
+}
+
+
+/* Media Query for wider than mobile viewports. Breakpoint should be based upon the design and content and use em units to be relative to the user's font size versus fixed with pixels.*/
+@media only screen and (min-width: 40em) {
+	.navigation {
+		display: flex;
+    }
+
+	.navigation li {
+		display: block; /* change state in small view */
+		flex: 1 1 100%;
+	}
+	.navigation a {
+		text-align: center;
+	}
+	#menu {
+		display: none;
+	}
 }
