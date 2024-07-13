@@ -22,7 +22,7 @@ async function getProphetData() {
       let portrait = document.createElement('img');
   
       // Build the h2 content out to show the prophet's full name
-      fullName.textContent = `${prophet.name, prophet.lastname}
+      fullName.textContent = `${prophet.name} ${prophet.lastname}
       Date of Birth:${prophet.birthdate} 
       Place of Birth:${ prophet.birthplace}`; // fill in the blank
       // Build the image portrait by setting all the relevant attributes
