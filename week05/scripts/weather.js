@@ -26,11 +26,12 @@ apiFetch();
 
 function displayResults(data){
     currentTemp.innerHTML = `${data.main.temp}&deg;F`;
-    const iconsrc = `https://openweathermap.org/img/w/${10d}.png`;
+    const iconsrc = `https://openweathermap.org/img/w/${data.weather[0].icon}@2x.png`;
     let desc = data.weather[0].description;
-    weatherIcon.setAttribute ('loading', 'lazy');
-    weatherIcon.setAttribute('alt', 'img photo'); 
+    weatherIcon.setAttribute ('SRC', iconsrc);
+    weatherIcon.setAttribute('alt', data.weather.description); 
     captionDesck.textContent = `${desc}`;
 
-
 }
+
+
