@@ -25,8 +25,8 @@ apiFetch();
 
 
 function displayResults(data){
-    currentTemp.innerHTML = `${data.weather}&deg;F`;
-    const iconsrc = `https://openweathermap.org/img/w/${weatherIcon}.png`;
+    currentTemp.innerHTML = `${data.main.temp}&deg;F`;
+    const iconsrc = `https://openweathermap.org/img/w/${10d}.png`;
     let desc = data.weather[0].description;
     weatherIcon.setAttribute ('loading', 'lazy');
     weatherIcon.setAttribute('alt', 'img photo'); 
