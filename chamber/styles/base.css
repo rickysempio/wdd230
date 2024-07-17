@@ -7,14 +7,7 @@
 }
 
 
-/*10 centering*/
 
-/*#hero-msg {
-    grid-column: 2/3;
-    grid-row: 1/2;
-    margin-top: 100px;
-
-}
 
 #hero {
     display: grid;
@@ -52,19 +45,6 @@ main section {
 }
 
 
-/*11 Adding a container 
-for our message background*/
-
-/*#background {
-    height: 725px;
-    background-color: #d9c2a3;
-}
-           
-
-
-/*12 As you apply background colors and text colors make sure you pick colors with a good contrast. 
-Go to your site plan for colors that you had in mind for the site. 
-Use background-color for backgrounds and color for text or font colors.*/
 
 body {
     background-color: #fcfbfb; 
@@ -508,3 +488,83 @@ body {
      /*border-right: var(--webform-valid);*/
  }
  
+
+ /*directory css*/
+ 
+ /* styles.css */
+   
+ body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 80%;
+    margin: 20px auto;
+}
+
+.view-toggle {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.view-toggle button {
+    padding: 10px 20px;
+    margin: 0 10px;
+    border: none;
+    background-color: #3e4d58;
+    color: white;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.view-toggle button:hover {
+    background-color: #0056b3;
+}
+
+.directory {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.grid-view .business-card {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 20px;
+    margin: 10px;
+    width: calc(33.333% - 20px); /* 3 cards per row */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.grid-view .business-card:hover {
+    transform: translateY(-10px);
+}
+
+.list-view .business-card {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 20px;
+    margin: 10px 0;
+    width: 100%;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.business-card h2 {
+    margin: 0;
+    font-size: 1.5em;
+}
+
+.business-card p {
+    margin: 5px 0;
+}
+   
+    

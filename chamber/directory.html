@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Ricky Sempio - WDD 230 - Web Frontend Development</title>
+    <meta name="description" content="WDD 230 - Web Frontend Development - Ricky Sempio - course assignment portal">
+    <meta name="author" content="Ricky Sempio">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/larger.css">
+    <link rel="icon" href="favicon.ico">
+    <meta property="og:title" content="The Santa Rosa Community Chambers of commerce">
+    <meta property="og:type" content="Website">
+    <meta property="og:image"
+        content="https://upload.wikimedia.org/wikipedia/commons/2/26/Santa_Rosa_Arch_%28Rizal_Boulevard%2C_Santa_Rosa%2C_Laguna%3B_12-23-2021%29.jpg">
+    <meta property="og:url" content="https://github.com/rickysempio/cse210-projects">
+    <link rel="stylesheet" href="styles/normalize.css">
+</head>
+<body>
+    <header>
+        <img src="images/profile-image.JPG" alt="Ricky Sempio profile" width="75" height="100">
+        <span>Ricky Sempio</span>
+    </header>
+    <a id="menu" href="#"></a>
+    <nav class="navigation">
+        <ul>
+            <li><a class="active" href="index.html">Home</a></li>
+            <li><a href="chamber/index.html">Chamber</a></li>
+            <li><a href="week01/chamber-site-plan.html">Site Plan</a></li>
+            <li><a href="form.html">Form</a></li>
+        </ul>
+    </nav>
+    <div class="container">
+        <div class="view-toggle">
+            <button id="grid-view-btn" onclick="toggleView('grid')">Grid View</button>
+            <button id="list-view-btn" onclick="toggleView('list')">List View</button>
+        </div>
+        <div class="directory grid-view" id="directory"></div>
+    </div>
+    <script src="script.js"></script>
+    <footer>
+        <p>&copy; 2024 Ricky Sempio</p>
+        <p id="lastModified">Last Modification:</p>
+    </footer>
+    <script src="scripts/getDates.js"></script>
+    <script src="scripts/visits.js"></script>
+    <script src="scripts/hamburger.js"></script>
+
+    <script src="scripts/weather.js"></script>
+    <script src="scripts/directory.js"></script>
+    <script src="scripts/hamburger.js"></script>
+
+</body>
+</html>
+
+
