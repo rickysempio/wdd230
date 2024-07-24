@@ -11,7 +11,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles/base.css">
-    <link rel="stylesheet" href="styles/larger.css">
+    <link rel="stylesheet" href="styles/base.css">
     <link rel="icon" href="favicon.ico">
     <meta property="og:title" content="The Santa Rosa Community Chambers of commerce">
     <meta property="og:type" content="Website">
@@ -20,42 +20,57 @@
 
 </head>
 <body>
-    <div id="content">
+    <!--<div id="content">-->
         <header>
             <a id="logo_link" href="index.html">
                 <img class="logo" src="images/hold-hands-logo.png" alt="santa-rosa-arc-logo">
-            </a> 
-            <nav>
+            </a>
+            <!--<nav>
                 <a href="index.html">Home</a>
                 <a href="discover.html">Discover</a>
                 <a href="directory.html">Directory</a>
                 <a href="join.html">Join</a>
-            </nav>  
+            </nav>-->
+            <div>
+                <a id="menu" href="#"></a>
+                <nav>
+                    <ul class="navigation">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="discover.html">Discover</a></li>
+                        <li><a href="directory.html">Directory</a></li>
+                        <li><a href="join.html">Join</a></li>
+                    </ul>
+                </nav>
+            </div>
         </header>
         <div  id="image-box">
             <img id="hero-img" src="images/hero-santa-rosa-img.jpeg" alt="hero-santa-rosa-img">
         </div>
-        <div id="home-grid">
-            
-            <section class="home-info">
-                <h1>Call to action</h1>
-                <p></p>
-            </section >
-            <section class="home-info">
-                <h1>Current Event</h1>
-                <p></p>
-            <section class="home-info">
+        <div id="home-grid">             
+            <div class="cta-container">
+                <button id="cta-button">Be a part of our community now...</button>
+            </div>        
+            <div id="banner" class="banner">
+                <p>Join us for a meet and greet on Wednesday at 7:00 PM!</p>
+                <button id="close-banner">Close</button>
+            </div>
+            <section class="card">
                 <h1>Weather information</h1>
-                <p></p>
+                <div class="card">
+                    <h2 id="town">Santa Rosa Laguna</h2>
+                    <img id="graphic" src="SRC" alt="iconsrc">
+                    <p id="description"></p>
+                    <p id="temperature"></p>
+                </div>
+                <p><span class="label">Number of Visits:</span><span class="visits"></span></p>
             </section>
-            <section class="home-info">
-                <h1>Business spotlights</h1>
-                <p></p>
+            <section>
+                <h1>Spotlights</h1>
+                <div id="members-container" class="content"></div>
             </section>
         </div>
         <footer>
             <p>Santa Rosa Community and Chambers Commerce &copy;2024 Ricky Sempio|WDD230</p>
-            <p></p><a href="directory.html">Directory</a></p>
             <div class="social">
                 <a href="https://facebook.com" target="_blank">
                     <img src="images/facebook.png" alt="fb icon">
@@ -70,7 +85,14 @@
             <p id="lastModified">Last Modification:</p>
 
         </footer>
-    </div>  
+    <!--</div>-->  
 <script src="scripts/chamber.js"></script> 
+<script src="/wdd230/scripts/weather.js"></script>
+<script src="scripts/spotlight.js"></script>
+<script src="scripts/hamburger.js"></script>
+
+
+
+
 </body>
 </html>

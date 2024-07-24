@@ -1,5 +1,5 @@
-{
-"members": [
+
+     [
     {
         "name": "Aerowind Technologies, Inc",
         "address": "Rodeo Drive, Laguna Bel Air 2 Sta. Rosa, Laguna",
@@ -12,14 +12,14 @@
         "address": "Beron Tri-Center Bldg. National Hi-Way, Brgy. Tagapo, Santa Rosa City",
         "phone": "(049) 8317048",
         "WebsiteURLs": "www.collabraintech.com",
-        "membership" : "Gold"
+        "membership" : "Silver"
     },
     {
         "name": "She Plants Too",
         "address": "belair 1, Santa Rosa City, Laguna",
         "phone": "09186979916",
         "WebsiteURLs":"sheplantstoo.wordpress.com/she-plants-too",
-        "membership" : "Gold"
+        "membership" : "Bronze"
 
     },
     {
@@ -27,7 +27,7 @@
         "address": "Brgy. Sinalhan City of Santa Rosa, Laguna",
         "phone": "09126084607",
         "WebsiteURLs":"www.businesslist.ph",
-        "membership" : "Gold"
+        "membership" : "Bronze"
 
     },
     {
@@ -35,14 +35,14 @@
         "address": "Sta. Rosa Business Park, Don Jose, Santa Rosa City, Laguna",
         "phone": "(049)5439745",
         "WebsiteURLs":"www.adeasinc.com",
-        "membership" : "Gold"
+        "membership" : "Bronze"
     },
     {
         "name": "Tensumi Corporation",
         "address": "Brgy. Balibago, Sta. Rosa City, Laguna",
         "phone": "(049) 545 4658",
         "WebsiteURLs":"www.facebook.com/tensumi/",
-        "membership" : "Gold"
+        "membership" : "Silver"
     },
     {
         "name": "JRS Express - Santa Rosa City, Laguna",
@@ -54,4 +54,5 @@
 
 ]
 
-}
+
+

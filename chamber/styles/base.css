@@ -1,11 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600&family=Montserrat&display=swap');
 
 
-#content {
+/*#content {
     max-width: 1600px;
     margin: 0 auto;  
-}
-
+}*/
 
 
 
@@ -193,81 +192,6 @@ footer .social img {
     padding-top: 15px;
 }
 
-.rivers-card, .camping-card, .rapids-card {
-    margin: 200px 0;
-}
-
-.card-img {
-    border: 10px solid black;
-    width:100%    
-}
-
-.card-img {
-    border: 10px solid #d9c2a3;
-    transition: transform .5s;
-    box-shadow: 5px 5px 10px #6f7364;
-
-}
-
-.mountains {
-    width: 100%;
-}
-
-main section img {
-    box-sizing: border-box;
-}
-
-.home-grid {
-    display:grid;
-    grid-template-columns: repeat(10, 1fr);
-}
-
-.rivers-card {
-    grid-column: 2/4;
-    grid-row: 2/3;
-}
-
-.camping-card{
-    grid-column: 5/7;
-    grid-row: 2/3;
-}
-
-.rapids-card {
-    grid-column: 8/10;
-    grid-row: 2/3;
-}
-
-#background {
-    grid-column: 1/11;
-    grid-row: 4/9;
-}
-
-.mountains {
-    grid-column: 2/7;
-    grid-row: 5/8;
-}
-
-.mountains {
-    width: 100%;
-    grid-column: 2/7;
-    grid-row: 5/8;
-    box-shadow: 5px 5px 10px #6f7364;
-}
-
-
-.msg {
-    grid-column: 6/10;
-    grid-row: 6/7;
-}
-
-
-.msg {
-    background-color: #6f7364;
-    padding: 35px;
-    grid-column: 6/10;
-    grid-row: 6/7;
-    box-shadow: 5px 5px 10px #6f7364;
-}
 
 
 footer {
@@ -461,7 +385,7 @@ body {
     border-radius:6px;
     padding: .9rem;
     width:100%;
-    max-width: 700px;
+    max-width: 375px;
     margin: -1rem 2%  2rem 2%;
     box-shadow: 1px 1px 4px #999;
     font-size: 1rem;
@@ -567,4 +491,238 @@ body {
     margin: 5px 0;
 }
    
-    
+
+/*weather css*/
+.card {
+	border: 1px solid #5d6f67;
+	background-color: #dee6da;
+	border-radius: 10px;
+	text-align: center;
+	display:block;
+	height: auto;
+	width:400px;
+    	
+	
+}
+
+.card h2 {
+	color: #3a5250;
+	margin:.3rem;
+}
+
+.card #description {
+	text-transform:capitalize;
+	margin: .3rem 0;
+	color:#3a5250
+}
+	
+.card #temperature{
+	font-size:2rem;
+	margin: .3rem;
+	color: #537279;
+	
+}
+
+
+/* spotlight advertisement styles.css */
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+.content {
+    padding: 20px;
+}
+
+.member {
+    padding: 20px;
+    border: 2px solid black;
+    margin: 10px 0;
+    position: relative;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.member.Gold {
+    background-color: gold;
+}
+
+.member.Silver {
+    background-color: silver;
+}
+
+.spotlight {
+    transform: scale(1.1);
+    box-shadow: 0 0 20px rgba(255, 255, 0, 0.8);
+}
+
+h1 {
+    margin-top: 12px;
+}
+
+
+/* banner styles.css */
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+.banner {
+    display: none;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: #ffcc00;
+    color: black;
+    text-align: center;
+    padding: 10px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+    z-index: 1000;
+}
+
+.banner button {
+    margin-left: 20px;
+    padding: 5px 10px;
+    background-color: red;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+
+/* call to action styles.css */
+
+.cta-container {
+    text-align: center;
+}
+
+#cta-button {
+    padding: 15px 30px;
+    font-size: 18px;
+    color: white;
+    background-color: #585c14d9;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+#cta-button:hover {
+    background-color: #555c30;
+}
+
+
+/*local storage css*/
+
+* {
+	box-sizing: border-box;
+}
+
+main {
+	border: 1px solid rgba(0, 0, 0, 0.1);
+	padding: 1rem;
+	width: 760px;
+	background-color: rgba(225, 225, 255, 0.2);
+}
+
+p {
+	margin: 1rem;
+}
+
+.label {
+	font-family: Arial, sans-serif;
+	font-weight: 700;
+}
+
+#visits {
+	color: navy;
+	font-weight: bolder;
+	font-size: larger;
+}
+
+
+
+
+/*hamburger menu css*/
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	font-family: Roboto, sans-serif;
+}
+/* Mobile View ***************/
+#menu {
+	display: block;
+	font-size: 2rem;
+	font-weight:700;
+	text-decoration: none;
+	padding: .5rem .75rem;
+	background-color: #eee;
+	color: #000;
+}
+
+#menu::before {
+	content: "≡";
+}
+
+/*nav {
+	background-color: tomato;
+}*/
+
+.navigation {
+	list-style: none;
+	margin: 0 auto;
+	max-width: 760px;
+}
+
+.navigation li {
+	display: none;
+}
+.navigation a {
+	display: block;
+	padding: 0.75rem;
+	text-align: left;
+	text-decoration: none;
+	color: whitesmoke;
+	font-weight: 700;
+	transition: 0.5s;
+	font-size: clamp(1rem, 2vmin, 1.5rem);
+}
+
+.navigation a:hover, navigation a:active {
+	color: white;
+	background-color: black;
+}
+
+.show li {
+	display: block;
+}
+
+#menu.show::before {
+	content: "X";
+}
+
+/* Media Query for wider than mobile viewports. Breakpoint should be based upon the design and content and use em units to be relative to the user's font size versus fixed with pixels.*/
+@media only screen and (min-width: 40em) {
+	.navigation {
+		display: flex;
+        font-size: 3rem;
+	}
+	.navigation li {
+		display: block; /* change state in small view */
+		flex: 1 1 100%;
+
+	}
+	.navigation a {
+		text-align: center;
+	}
+	#menu {
+		display: none;
+	}
+
+}
